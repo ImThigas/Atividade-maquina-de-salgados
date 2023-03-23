@@ -68,3 +68,29 @@ function maquina(){
         alert("Até outro dia!")
         }    
 }
+function imc(){
+    var peso = parseFloat(prompt("Informe o seu peso", ""))
+    if(peso){
+        var altura = parseFloat(prompt("Informe a sua altura: ", ""))
+        if(altura){
+            var valorfinal = parseFloat(peso/Math.pow(altura,2))
+            if(valorfinal<20){
+                alert("De acordo com a tabela IMC, sua situação é: Abaixo do peso")
+            }else if(valorfinal>=20 && valorfinal<25){
+                alert("De acordo com a tabela IMC, sua situação é: Normal")
+            }else if(valorfinal>=25 && valorfinal<30){
+                alert("De acordo com a tabela IMC, sua situação é: Sobrepeso")
+            }else if(valorfinal>=30 && valorfinal<35){
+                alert("De acordo com a tabela IMC, sua situação é: Obesidade grau I")
+            }else if(valorfinal>=35 && valorfinal<40){
+                alert("De acordo com a tabela IMC, sua situação é: Obesidade grau II")
+            }else{
+                alert("De acordo com a tabela IMC, sua situação é: Obesidade grau III")
+            }
+        }else{
+        alert("Até outro dia!")
+        }
+        }else{
+        alert("Até outro dia!")
+        }
+}
