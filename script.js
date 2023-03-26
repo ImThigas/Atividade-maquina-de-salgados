@@ -94,3 +94,71 @@ function imc(){
         alert("Até outro dia!")
         }
 }
+function funcao(){
+    var num = parseFloat(prompt("Informe um número: ", ""))
+    if(!Number.isNaN(num)){
+    if(num<-2){
+        var numfinal = parseFloat(2*num+2)
+        alert("O Valor da função após receber X="+num+" é f("+num+")="+numfinal)
+    }else if(-2<=num<3){
+        alert("O Valor da função após receber X="+num+" é f("+num+")=3")
+    }else if(3<=num){
+        var numfinal = parseFloat(-1*num)
+        alert("O Valor da função após receber X="+num+" é f("+num+")="+numfinal)
+    }
+        }else {
+        alert("Até outro dia!")
+    }
+}
+function produtos(){
+    var id = parseInt(prompt("Informe o ID do produto: ", ""))
+    switch(id){
+        case 1:
+            alert("ID - 1\nProduto - Sapato\nPreço - R$ 99,99")
+            break;
+        case 2:
+            alert("ID - 2\nProduto - Bolsa\nPreço - R$ 103,89")
+            break;
+        case 3:
+            alert("ID - 3\nProduto - Camisa\nPreço - R$ 49,98")
+            break;
+        case 4:
+            alert("ID - 4\nProduto - Calça\nPreço - R$ 89,72")
+            break;
+        case 5:
+            alert("ID - 5\nProduto - Blusa\nPreço - R$ 97,35")
+            break;
+        default:
+            alert("Informe um ID válido")
+            break;
+        }
+}
+function salario(){
+    var codtrab = parseInt(prompt("Informe o Código do(a) Colaborador(a): ", ""))
+    var horas = parseInt(prompt("Informe as horas trabalhadas por ele(a): ", ""))
+    switch(codtrab){
+        case 1:
+           var salariobruto = parseFloat(horas*45.78)
+           alert("O Salário bruto a ser pago para Ana é: "+salariobruto)
+            break;
+        case 2:
+            var salariobruto = parseFloat(horas*60.00)
+            alert("O Salário bruto a ser pago para Bruna é: "+salariobruto)
+            break;
+        case 3:
+            var salariobruto = parseFloat(horas*38.99)
+            alert("O Salário bruto a ser pago para Carlos é: "+salariobruto)
+            break;
+        case 4:
+            var salariobruto = parseFloat(horas*45.78)
+            alert("O Salário bruto a ser pago para Diogo é: "+salariobruto)
+            break;
+        case 5:
+            var salariobruto = parseFloat(horas*45.78)
+            alert("O Salário bruto a ser pago para Ester é: "+salariobruto)
+            break;
+        default:
+            alert("Informe um Código de Colaborador(a) válido")
+            break;
+    }
+}
